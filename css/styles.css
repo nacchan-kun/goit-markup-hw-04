@@ -92,6 +92,8 @@ section {
   margin: 0;
   padding: 24px 0;
   display: block;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:focus {
@@ -126,6 +128,10 @@ section {
   letter-spacing: 0.02em;
   color: #434455;
   margin-right: 0;
+
+  display: block;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover {
@@ -148,6 +154,9 @@ section {
 
 .header-box {
   border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-navigation {
@@ -163,6 +172,19 @@ section {
   padding-bottom: 120px;
   box-sizing: border-box;
   padding: 188px 0;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
 }
 
 .button-section-heading {
@@ -199,6 +221,7 @@ section {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover .button:focus {
@@ -250,6 +273,25 @@ section {
 
 .main-list-ul {
   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.benefits-container {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  width: 64px;
+  height: 64px;
 }
 
 /* Section 3 */
@@ -316,6 +358,10 @@ section {
 .team-list-heading-container {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.team-icons {
+  fill: #4d5ae5;
 }
 
 /* Section 4 */
